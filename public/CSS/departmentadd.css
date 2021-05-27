@@ -1,0 +1,79 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+background-image: url(../image/back.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 263px;
+  margin-right: 242px;
+
+}
+
+.input-container {
+display: flex;
+width: 100%;
+margin-bottom: 15px;
+margin-left: 20px;
+}
+
+
+
+
+.input-field {
+width: 190px;
+padding: 10px;
+outline: none;
+}
+label{
+margin-right: 98px;
+}
+
+
+
+#DepartmentAddSubmitButtonId    
+{
+background-color:  rgb(14, 51, 129);
+  padding: 15px 20px;
+  margin-right: 600px;
+  position: relative;
+ 
+  border: none;
+  cursor: pointer;
+  width: 126px;
+  opacity: 0.9;
+  color: white;
+  margin-top: 30px;
+}
+#DepartmentAddSubmitButtonId:hover{
+background-color: rgb(49, 102, 202);
+}
+#departmentIdDepartmentAddId{
+margin-left: 13px;
+height: 39px;
+  width: 230px;
+
+}
+#deparmentNameDepartmentAddId{
+  margin-left: -10px;
+  height: 39px;
+  width: 230px;
+}
+#passwordDepartmentAddId{
+margin-left: -38px;
+height: 39px;
+  width: 230px;
+}
+#confirmpassDepartmentAddId{
+margin-left: 20px;
+height: 39px;
+  width: 230px;
+}

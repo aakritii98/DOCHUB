@@ -1,0 +1,58 @@
+<doctype html>
+<html>
+<head> 
+<title> HTML FORM </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+<script src="../js/sweetalert.js"></script>
+<link href="../CSS/signupstylesheet.css" type="text/css" rel="stylesheet">
+<script>
+	let token = localStorage.getItem("TOKEN");
+	if (token && token.length > 12) {
+		window.location.href = "/adminhome"
+	} 
+</script>
+</head>
+
+<body>
+     <div class="main" style="margin-left: 600px;">
+	 <h1> Register Yourself here</h1>
+     <!-- <form method="GET" ACTION="signup.html"> -->
+	     <p class="para">
+		 <i class="fa fa-user" aria-hidden="true"></i>
+	     Enter your name <br> 
+		   <input type="text" name="name" placeholder="Enter Name" size=50 required id="signUpNameId" style="height: 30px;"/>
+		   <br>
+		 </p>
+         <p class="para">	
+         <i class="fa fa-user" aria-hidden="true"></i>		 
+           Enter your mail id <br>
+		   <input type="text" name="mail" placeholder="Enter Mail id" size=50 required id="signUpEmaiId" style="height: 30px;"/>
+		   <br> 
+		   </p>
+		   <p class="para">
+		   <i class="fa fa-lock" aria-hidden="true"></i>
+		    Enter Institute Code  <br>
+		   <input type="text" name="code" placeholder="Enter Institute Code" size=50 required id="signUpInstitudeNameId" style="height: 30px;"/>
+		   <br>
+		    </p>
+			<p class="para">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			 Create your password <br>
+		   <input type="password" name="pass" placeholder="Enter Password" size=50 required id="signUpPasswordId" style="height: 30px;"/>
+		   <br>
+		   </p>
+		   <p class="para">
+		   <i class="fa fa-lock" aria-hidden="true"></i>
+		  	Confirm your password <br>
+		   <input type="password" name="pass" placeholder="Confirm Password" id="signUpConfirmPassId" required  size=50/ style="height: 30px;">
+		   </p>
+			<button class="btn" style="background:rgba(0,0,200);height:40px;width:100px;font-size:20px; color:white;" type="button" name="" value="" id="signUpSubmitButtonId">Sign Up</button>
+	</div> 
+	
+	<script src="../js/signup.js"></script>
+	<script src="../js/ajax.js"></script>
+	<script src="../js/endpoints.js"></script>
+
+</body>
+</html>

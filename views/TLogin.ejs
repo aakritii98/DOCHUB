@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+    <script src="../js/sweetalert.js"></script>
+
+    <link href="../CSS/logindh.css" type="text/css" rel="stylesheet">
+    <title>Login-page</title>
+    <script>
+        let token = localStorage.getItem("TOKEN");
+        if (token && token.length > 12) {
+            window.location.href = "/teacher"
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="UserID" id="teacherEmailInputId">
+
+        </div>
+        <div class="textbox">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" id="teacherPasswordInputId">
+        </div>
+        
+        <a>
+            <button class="btn" style="background:#06314e;height:40px;width:100px;font-size:20px; color:white;" type="button" id="signInTeacherSubmitButtonId">Login</button>
+            <div class="pass">
+            <p><a href="/tcresetpass">Forgot Password</a></p>
+        </div>
+    </div>
+
+
+    <script src="../js/teacher_js/teacher_login.js"></script>
+	<script src="../js/ajax.js"></script>
+	<script src="../js/endpoints.js"></script>
+</body>
+
+</html>

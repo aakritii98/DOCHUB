@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symposia</title>
+    <link rel="stylesheet" href="../CSS/symposia.css">
+  
+</head>
+ 
+<body>
+    <div class="box row">
+        <div class="column" id="imaged">
+            <img src="../image/symposia.jpg" style="height:450px;width:500px; margin:70px 70px 70px 70px;">
+        </div>
+    
+    <div class="menu column">
+   
+    <form>
+        <!-- <div class="input-container">
+            <label for="doctype">Enter Teacher Id:</label>
+            <input type="string" id="doctype" name="teacherid" placeholder="Teacher Id"><br>
+        </div> -->
+        <!-- <div class="input-container"> -->
+            <!-- <label for="doctype">Enter Record Type:</label> -->
+            <!-- <select name="rtype" id="rtype">
+                <option hidden > Record Type </option>
+                <option value="conference" id="conference" >conference </option>
+                <option value="workshop"  id="workshop">workshop</option>
+                <option value="seminar" id="seminar">seminar</option>
+                <option value="symposia" id="symposia">symposia</option>
+           </select><br>
+        </div> -->
+        <div class="input-container">
+            <!-- <label for="doctype">Enter Record Nature:</label> -->
+            <select name="rnature" id="rnature" onchange="populate(this.id,'rtitle')">
+                <option hidden >Nature of Symposia</option>
+                <option value="Organized"  id="Organized">Organized</option>
+                <option value="member" id="memeber">Chairperson/moderator/member</option>
+                <option value="Participation" id="Participation" >Participation </option>
+           </select><br>
+        </div>
+        <div class="input-container">
+            <!-- <label for="doctype">Enter Record Title:</label> -->
+            <select id="rtitle" name="rtitle" >
+                <option hidden >Title  of Symposia</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <!-- <label for="doctype">Enter Record Place:</label> -->
+            <input type="string" id="rplace" name="recordplace" placeholder="Place of Symposia"><br>
+        </div>
+        <div class="input-container">
+            <!-- <label for="doctype">Enter  Record date:</label> -->
+            <input type="date" id="rdate" name="recorddate" placeholder="Date of Symposia" style="width:380px" ><br>
+        </div>
+        <div class="input-container">
+            <!-- <label for="doctype">Enter Record Details:</label> -->
+            <textarea type="string" id="rdetails" name="recorddetail" placeholder="Details of Symposia"></textarea><br>
+        </div>
+        <div class="input-container" id="filechoose">
+            <label for="fname">Upload your certificate:</label>
+            <input type="file" id="real-file" hidden="hidden" />
+            <button type="button" id="custom-button" >Choose</button>
+            <span id="custom-text">No file choosen</span>
+
+            <script type="text/javascript">
+                const realFileBtn=document.getElementById("real-file");
+                const customBtn=document.getElementById("custom-button");
+                const customTxt=document.getElementById("custom-text");
+
+                customBtn.addEventListener("click", function(){
+                    realFileBtn.click();
+                });
+
+                realFileBtn.addEventListener("change",function(){
+                    if(realFileBtn.value)
+                    {
+                        customTxt.innerHTML=realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                    }
+                    else    
+                        customTxt.innerHTML="No file choosen";
+                })
+            </script>
+        </div>
+        
+        <button class="btn">Add</button>
+        
+    </form>
+</div>
+</div>
+<script src="../HTML/conference.js"></script> 
+</body>
+</html>

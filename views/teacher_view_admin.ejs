@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc Hub</title>
+    <link href="../CSS/teacher_view.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+
+    <script>
+        function changeLanguage(language) {
+            var element = document.getElementById("url");
+            element.value = language;
+            element.innerHTML = language;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <input class="form-input" type="text" id="searchboxId" placeholder="&#128269 Search...">
+            <button id="searchButtonId">Search</button>
+        </div>
+    </div>
+
+    <h1>Teacher List</h1>
+    <div class="row" id="teacherCardsParentID">
+        <div class="col-md-4 col-sm-6 col-12">
+            <div class="container cardClass">
+                <h2 id="secondary"> Kuldeep Yogi</h2>
+                <h2 style="font-size: medium;"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/sweetalert.js"></script>
+    <script src="../js/checkAdmin.js"></script>
+    <script src="../js/teacher_view_admin.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/endpoints.js"></script>
+</body>
+
+</html>

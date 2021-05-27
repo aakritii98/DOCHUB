@@ -1,0 +1,34 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+.main
+{
+   margin:200px 500px 400px 400px;
+}
+.para
+{
+   margin:10px 10px 10px 10px;
+}
+body
+{
+   background-image:url("../image/lgdh.jpg");
+   background-repeat:no-repeat;
+   background-size:cover;
+}
+.footer
+{
+   font-size:50px;
+	height:50px;
+	width:30px;
+}
+.textbox i{
+    width: 70px;
+    float: left;
+    text-align: center;
+    font-size:30px;
+}
+#signUpSubmitButtonId{
+   margin-left: 100px;
+}
+.left
+{
+text-align:left;
+}

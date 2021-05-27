@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/teacheradd.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+
+</head>
+<body>
+    <div id="menu">
+            <div class="input-container">
+                <label for="teacherid">Enter Teacher Id:</label>
+                <input type="text" id="teacherid" name="teacherpid" placeholder="Teacher Id"><br>
+            </div>
+            <div class="input-container">
+                <label for="teachername">Enter Teacher Name:</label>
+                <input type="text" id="teachername" name="teachername" placeholder="TeacherName"><br>
+            </div>
+            <div class="input-container">
+                <label for="teacherdep">Enter Department Name:</label>
+                <input type="text" id="teacherdep" name="teacherdep" placeholder="Department Name"><br>
+            </div>
+            <div class="input-container">
+                <label for="teacherpass">Enter Teacher Password:</label>
+            <input type="password" id="teacherpass" name="teacherpass" placeholder="Password"><br>
+            </div>
+            <div class="input-container">
+                <label for="conpass">Confirm Password:</label>
+                <input type="password" id="conpass" name="conpass" placeholder="Confirm Password"><br>
+        
+            </div>
+            <button class="btn" id='teacherAddSubmitButtonId'>Add</button>
+    </div>
+
+<script src="../js/sweetalert.js"></script>
+<script src="../js/checkDepart.js"></script>
+<script src="../js/teacher_js/teacher_add.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/endpoints.js"></script>
+</body>
+</html>
